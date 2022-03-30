@@ -17,10 +17,10 @@ LesterFactory = {
 
     LoadDefault = function()
         LesterFactory.Details.Enable(LesterFactory.Details.bluePrint, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.bag, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.bag, true)
         LesterFactory.Details.Enable(LesterFactory.Details.fireMan, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.armour, false)
-        LesterFactory.Details.Enable(LesterFactory.Details.gasMask, false)
+        LesterFactory.Details.Enable(LesterFactory.Details.armour, true)
+        LesterFactory.Details.Enable(LesterFactory.Details.gasMask, true)
         LesterFactory.Details.Enable(LesterFactory.Details.janitorStuff, false)
         RefreshInterior(LesterFactory.interiorId)
     end

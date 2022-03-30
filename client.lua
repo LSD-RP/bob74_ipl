@@ -1,3 +1,59 @@
+---------------------------------------------------------------------------------------
+--			Arena Resource by Titch2000 You may edit but please keep credit.
+---------------------------------------------------------------------------------------
+-- config
+local map = 5
+local scene = "dystopian"
+
+-- 		NO TOUCHING BELOW THIS POINT, NO HELP WILL BE OFFERED IF YOU DO.
+---------------------------------------------------------------------------------------
+local maps = {
+	["dystopian"] = {
+		"Set_Dystopian_01",
+		"Set_Dystopian_02",
+		"Set_Dystopian_03",
+		"Set_Dystopian_04",
+		"Set_Dystopian_05",
+		"Set_Dystopian_06",
+		"Set_Dystopian_07",
+		"Set_Dystopian_08",
+		"Set_Dystopian_09",
+		"Set_Dystopian_10",
+		"Set_Dystopian_11",
+		"Set_Dystopian_12",
+		"Set_Dystopian_13",
+		"Set_Dystopian_14",
+		"Set_Dystopian_15",
+		"Set_Dystopian_16",
+		"Set_Dystopian_17"
+	},
+
+	["scifi"] = {
+		"Set_Scifi_01",
+		"Set_Scifi_02",
+		"Set_Scifi_03",
+		"Set_Scifi_04",
+		"Set_Scifi_05",
+		"Set_Scifi_06",
+		"Set_Scifi_07",
+		"Set_Scifi_08",
+		"Set_Scifi_09",
+		"Set_Scifi_10"
+	},
+
+	["wasteland"] = {
+		"Set_Wasteland_01",
+		"Set_Wasteland_02",
+		"Set_Wasteland_03",
+		"Set_Wasteland_04",
+		"Set_Wasteland_05",
+		"Set_Wasteland_06",
+		"Set_Wasteland_07",
+		"Set_Wasteland_08",
+		"Set_Wasteland_09",
+		"Set_Wasteland_10"
+	}
+}
 
 Citizen.CreateThread(function()
     -- ====================================================================
@@ -39,12 +95,12 @@ Citizen.CreateThread(function()
     Graffitis.Enable(true)
 
     -- UFO
-    UFO.Hippie.Enable(false)    -- 2490.47729, 3774.84351, 2414.035
+    UFO.Hippie.Enable(true)    -- 2490.47729, 3774.84351, 2414.035
     UFO.Chiliad.Enable(false)   -- 501.52880000, 5593.86500000, 796.23250000
     UFO.Zancudo.Enable(false)   -- -2051.99463, 3237.05835, 1456.97021
     
     -- Red Carpet: 300.5927, 199.7589, 104.3776
-    RedCarpet.Enable(false)
+    RedCarpet.Enable(true)
     
     -- North Yankton: 3217.697, -4834.826, 111.8152
     NorthYankton.Enable(false)
@@ -143,6 +199,39 @@ Citizen.CreateThread(function()
     if GetGameBuildNumber() >= 2060 then
         DiamondCasino.LoadDefault()                -- 1100.000, 220.000, -50.000
         DiamondPenthouse.LoadDefault()             -- 976.636, 70.295, 115.164
+    end
+
+    
+    -- New Arena : 2800.00, -3800.00, 100.00
+	RequestIpl("xs_arena_interior")
+    -- Lets get and save our interior ID for use later
+    local interiorID = GetInteriorAtCoords(2800.000, -3800.000, 100.000)
+
+    -- now lets check the interior is ready if not lets just wait a moment
+    if (not IsInteriorReady(interiorID)) then
+        Wait(1)
+    end
+    -- We need to add the crowds as who does stuff on their own for nobody?
+    EnableInteriorProp(interiorID, "Set_Crowd_A")
+    EnableInteriorProp(interiorID, "Set_Crowd_B")
+    EnableInteriorProp(interiorID, "Set_Crowd_C")
+    EnableInteriorProp(interiorID, "Set_Crowd_D")
+
+    -- now lets set our map type and scene.
+    if (scene == "dystopian") then
+        EnableInteriorProp(interiorID, "Set_Dystopian_Scene")
+        print("[Arena by Titch]: enabling map: "..maps[scene][map])
+        EnableInteriorProp(interiorID, maps[scene][map])
+    end
+    if (scene == "scifi") then
+        EnableInteriorProp(interiorID, "Set_Scifi_Scene")
+        print("[Arena by Titch]: enabling map: "..maps[scene][map])
+        EnableInteriorProp(interiorID, maps[scene][map])
+    end
+    if (scene == "wasteland") then
+        EnableInteriorProp(interiorID, "Set_Wasteland_Scene")
+        print("[Arena by Titch]: enabling map: "..maps[scene][map])
+        EnableInteriorProp(interiorID, maps[scene][map])
     end
 end)
 

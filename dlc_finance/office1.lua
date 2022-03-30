@@ -50,7 +50,7 @@ FinanceOffice1 = {
         Position = {x = -124.25, y = -641.30, z = 168.870}, -- Approximately between the two doors
 
         -- These values are checked from "doorHandler.lua" and
-        isLeftDoorOpen = false, isRightDoorOpen = false,
+        isLeftDoorOpen = true, isRightDoorOpen = true,
 
         -- Safe door API
         Open = function(doorSide)
@@ -164,7 +164,13 @@ FinanceOffice1 = {
     },
 
     LoadDefault = function()
-        FinanceOffice1.Style.Set(FinanceOffice1.Style.Theme.polished)
+        FinanceOffice1.Style.Set(FinanceOffice1.Style.Theme.rich)
         FinanceOffice1.Chairs.Set(FinanceOffice1.Chairs.on, true)
+        FinanceOffice1.Swag.Enable(FinanceOffice1.Swag.Cash, FinanceOffice1.Swag.Cash.M, true)
+        -- FinanceOffice1.Swag.Enable(FinanceOffice1.Swag.DrugBags, FinanceOffice1.Swag.DrugBags.C, true)
+        -- FinanceOffice1.Swag.Enable(FinanceOffice1.Swag.FurCoats, FinanceOffice1.Swag.FurCoats.C, true)
+        -- FinanceOffice1.Swag.Enable(FinanceOffice1.Swag.Painting, FinanceOffice1.Swag.Painting.C, true)
+        -- FinanceOffice1.Swag.Enable(FinanceOffice1.Swag.Gems, FinanceOffice1.Swag.Gems.C, true)
+        FinanceOffice1.Booze.Set(FinanceOffice1.Booze.on, true)
     end
 }

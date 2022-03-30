@@ -23,7 +23,7 @@ GunrunningBunker = {
                 "gr_case3_bunkerclosed",	-- Oilfields: 481.0465, 2995.135, 43.96672
                 "gr_case4_bunkerclosed",	-- RatonCanyon: -391.3216, 4363.728, 58.65862
                 "gr_case5_bunkerclosed",	-- Grapeseed: 1823.961, 4708.14, 42.4991
-                "gr_case6_bunkerclosed",	-- Farmhouse: 1570.372, 2254.549, 78.89397
+                -- "gr_case6_bunkerclosed",	-- Farmhouse: 1570.372, 2254.549, 78.89397
                 "gr_case7_bunkerclosed",	-- Paletto: -783.0755, 5934.686, 24.31475
                 "gr_case9_bunkerclosed",	-- Route68: 24.43542, 2959.705, 58.35517
                 "gr_case10_bunkerclosed",	-- Zancudo: -3058.714, 3329.19, 12.5844
