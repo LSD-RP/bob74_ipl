@@ -1,4 +1,4 @@
-# Fix holes and customize the map (Updated to Tuners DLC)
+# Fix holes and customize the map (Updated to The Criminal Enterprises DLC)
 
 The purpose of this script is to fix the holes in the map by loading zones that aren’t loaded by default. I’ve added quite a lot of places to load, based on [Mikeeh’s script](https://forum.fivem.net/t/release-load-unloaded-ipls/5911). If you just want to fix the holes in the map, then use this resource as provided.
 
@@ -30,6 +30,31 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 (DD/MM/YYYY)
 
 ---
+10/01/2023 - 2.1.2
+- Fix native and update native names (@NeenGame )
+
+24/10/2022 - 2.1.1
+- Fix vespucci beach wall hole
+- Fix Boat House Door in Sandy Shores
+- Fix GTA 5 24/7 Roof in Sandy Shores
+- Fix Industrial Building near Lesters Warehouse
+- Fix Collision Holes near Lost MC compound
+
+11/10/2022 - 2.1.0a
+- Make Doomsday Facility Objects non network
+
+03/08/2022 - 2.1.0
+- Added "The Criminal Enterprises" support
+
+02/05/2022 - 2.0.15
+- Reformatted code
+- Removed unused .gitignore
+- Bumped version in fxmanifest.lua
+- Improved performance
+
+21/04/2022 - 2.0.14
+- Fix casino penthouse carpet patterns colors
+
 12/02/2022 - 2.0.13a
 - Fix Music Roof
 
@@ -105,8 +130,8 @@ This resource has been completely rewritten from scratch since v2.0. You can cus
 - Fixed gang members names using an old format
 - Disabled the Mod shop from CEO garage 3 (ImportCEOGarage3) because it is overlapping with CEO office 3 (FinanceOffice3)
 
-- 08/11/2018 - 2.0.3
-Added biker gang’s name, missions, and members pictures
+08/11/2018 - 2.0.3
+- Added biker gang’s name, missions, and members pictures
 - Added CEO office organization’s name
 
 05/11/2018 - 2.0.1

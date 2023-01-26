@@ -21,8 +21,13 @@ CriminalEnterpriseVehicleWarehouse = {
     },
     Entities = {
         entity_set_office  = true,
+<<<<<<< HEAD
         entity_set_light_option_1 = false,
         entity_set_light_option_2 = false,
+=======
+        entity_set_light_option_1 = true,
+        entity_set_light_option_2 = true,
+>>>>>>> bob/master
         entity_set_light_option_3 = true,
         entity_set_tint_options = true,
 
