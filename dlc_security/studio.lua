@@ -18,9 +18,9 @@ MpSecurityStudio = {
         end,
     },
     Entities = {
-        Entity_Set_FIX_STU_EXT_P3A1 = false,
+        Entity_Set_FIX_STU_EXT_P3A1 = true,
         Entity_Set_FIX_TRIP1_INT_P2 = false,
-        Entity_Set_FIX_STU_EXT_P1 = false,
+        Entity_Set_FIX_STU_EXT_P1 = true,
         Entity_Set_Fire = true,
         entity_set_default = true,
         

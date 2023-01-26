@@ -18,7 +18,7 @@ MpSecurityGarage = {
         end,
     },
     Entities = {
-        Entity_Set_Workshop_Wall = false,
+        Entity_Set_Workshop_Wall = true,
         Entity_Set_Wallpaper_01 = false,
         Entity_Set_Wallpaper_02  = false,
         Entity_Set_Wallpaper_03 = false,
@@ -28,7 +28,7 @@ MpSecurityGarage = {
         Entity_Set_Wallpaper_07 = true,
         Entity_Set_Wallpaper_08 = false,
         Entity_Set_Wallpaper_09 = false,
-        Entity_Set_Art_1 = false,
+        Entity_Set_Art_1 = true,
         Entity_Set_Art_2 = false,
         Entity_Set_Art_3 = false,
         Entity_Set_Art_1_NoMod = false,

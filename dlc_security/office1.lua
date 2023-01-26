@@ -18,7 +18,7 @@ MpSecurityOffice1 = {
         end,
     },
     Entities = {
-        Entity_Set_Armoury = false,
+        Entity_Set_Armoury = true,
         Entity_Set_Standard_Office = true,
         Entity_Set_Blocker = false,
         Entity_Set_Wpaper_1 = false,

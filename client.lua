@@ -233,7 +233,7 @@ Citizen.CreateThread(function()
         print("[Arena by Titch]: enabling map: "..maps[scene][map])
         EnableInteriorProp(interiorID, maps[scene][map])
     end
-end)
+
 
     -- ====================================================================
     -- =------------------- [DLC: Los Santos Tuners] ---------------------=
@@ -256,5 +256,16 @@ end)
         MpSecurityOffice2.LoadDefault()   -- 383.4156, -59.878227, 108.4595
         MpSecurityOffice3.LoadDefault()   -- -1004.23035, -761.2084, 66.99069
         MpSecurityOffice4.LoadDefault()   -- -587.87213, -716.84937, 118.10156
+        -- Franklin house 13.01, 544.59, 175.95
+        RequestIpl("sf_franklin")
+    end
+
+    -- ====================================================================
+    -- =------------------- [DLC: The Criminal Enterprise] ---------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2699 then
+        CriminalEnterpriseSmeonFix.LoadDefault() -- -50.2248, -1098.8325, 26.049742
+        CriminalEnterpriseVehicleWarehouse.LoadDefault() -- 800.13696, -3001.4297, -65.14074
+        CriminalEnterpriseWarehouse.LoadDefault() -- 849.1047, -3000.209, -45.974354
     end
 end)
