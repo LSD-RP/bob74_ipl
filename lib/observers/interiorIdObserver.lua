@@ -1,5 +1,9 @@
 local _scanDelay = 500
 
+RegisterCommand('getinteriorid', function()
+    print(GetInteriorAtCoords(GetEntityCoords(PlayerPedId())))
+end)
+
 Citizen.CreateThread(function()
     while true do
         -- /!\ To do: Find a more reliable way to get the current interior ID

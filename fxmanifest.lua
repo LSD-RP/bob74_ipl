@@ -128,4 +128,7 @@ client_scripts {
     , "gta_mpsum2/simeonfix.lua"
     , "gta_mpsum2/vehicle_warehouse.lua"
     , "gta_mpsum2/warehouse.lua"
+
+    -- DLC Acid Lab
+    , "dlc_mpxmas3/*.lua"
 }
